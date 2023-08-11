@@ -1,0 +1,15 @@
+.fade {
+    animation-name: fadeout;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+
+  }
+  
+  @keyframes fadeout {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
