@@ -9,5 +9,5 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export async function loader({ request }: LoaderArgs) {
-  return redirect('/films')
+  return redirect('/films/1')
 }

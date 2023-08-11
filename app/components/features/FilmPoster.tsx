@@ -20,9 +20,9 @@ type FilmPosterProps = {
 }
 const FilmPoster: React.FC<FilmPosterProps> = ({ title, episode_id, release_date }) => {
     return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap ">
 
-            <div className="w-full md:w-full lg:w-1/2 max-w-4xl rounded overflow-hidden shadow-lg m-4 flex justify-between">
+            <div className="w-full md:w-full border border-transparent hover:border-yellow-500 lg:w-1/2 max-w-4xl rounded overflow-hidden shadow-lg m-4 flex justify-between">
                 <div className="md:flex-shrink-0">
                     <img className="md:w-56"
                         src={Posters[Posters.length - episode_id]}
@@ -37,7 +37,6 @@ const FilmPoster: React.FC<FilmPosterProps> = ({ title, episode_id, release_date
 
                 </div>
             </div>
-            <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
         </div>
     )
 }
