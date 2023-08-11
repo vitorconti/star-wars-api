@@ -14,3 +14,9 @@ export type Film = {
     created: string
     edited: string
 }
+export type FilmMetaData = {
+    count: number,
+    next: number | null,
+    previous: number | null,
+    results: Array<Film>
+}

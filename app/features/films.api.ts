@@ -1,5 +1,6 @@
-import { type Film } from "./types";
+import { type Film, type FilmMetaData } from "./types";
 import httpClient from "~/http-client";
 export async function getAllFilms(): Promise<Film[]> {
-    return await httpClient.get('/fims')
+    const { results } = await httpClient.get<FilmMetaData>('/films')
+    return results
 }
