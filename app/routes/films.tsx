@@ -18,7 +18,7 @@ export default function () {
             <div className='h-1/4 w-1/4'>
                 <img className='fade' src={StarWarsLogo} alt="star-wars-logo" />
             </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex flex-wrap'>
                 <div>
                     <Suspense fallback={<Loading />}>
                         <h2 className="text-xl text-gray-300 m-2">Filmes</h2>
