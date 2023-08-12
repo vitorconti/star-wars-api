@@ -1,58 +1,48 @@
-# Welcome to Remix!
+# Consumindo apis externas com paginação utilizando Remix!
 
-- [Remix Docs](https://remix.run/docs)
+Bem-vindo ao repositório projeto criado com Remix!
 
-## Development
+## Sobre o Projeto
 
-From your terminal:
+Este projeto foi desenvolvido utilizando o framework [Remix](https://remix.run/), que combina React com a arquitetura de servidor. Ele permite criar aplicativos web rápidos e responsivos com uma abordagem moderna.
 
-```sh
-npm run dev
-```
+## Funcionalidades Principais
 
-This starts your app in development mode, rebuilding assets on file changes.
+- Roteamento do lado do servidor para melhor SEO e desempenho.
+- Integração perfeita entre componentes React e servidor, proporcionando uma experiência de desenvolvimento unificada.
+- Controle de estado eficiente usando hooks e contextos do React.
+- Suporte a pré-renderização de páginas para tempos de carregamento mais rápidos.
+- CSS-modules para um estilo de componentes isolado e reutilizável.
 
-## Deployment
+## Como Iniciar
 
-First, build your app for production:
+Certifique-se de ter o Node.js (o remix pede que seja uma versao >= a 14, este projeto foi inteiro codado com a versao lts 18) e o yarn instalados em sua máquina.
 
-```sh
-npm run build
-```
+1. Clone este repositório: `git clone https://github.com/vitorconti/star-wars-api.git`
+2. Navegue até o diretório do projeto: `cd star-wars-api`
+3. Instale as dependências: `yarn`
+4. Inicie o servidor de desenvolvimento: `yarn dev`
+5. Abra seu navegador e acesse: `http://localhost:3000`
 
-Then run the app in production mode:
+## Utilizando o projeto
+Apos seguir os passos anterior, você será levado para a tela inicial do sistema, aproveite para apreciar as belissimas animações! Depois de tudo carregado, você poderá navegar pela lista de personagens
+paginada clicando nos botões de próximo e anterior. Lembrando que a api utilizada https://swapi.dev/ é pública e consequentemente as requisições podem demorar um pouco a mais para serem respondidas, então novamente, aproveite as animações de carregamento!
 
-```sh
-npm start
-```
+## Estrutura do Diretório
 
-Now you'll need to pick a host to deploy it to.
+- `app/`: Contém os componentes React, rotas e lógica de aplicativo.
+- `public/`: Arquivos estáticos acessíveis publicamente.
 
-### DIY
+## Contribuindo
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests com melhorias, correções de bugs ou novos recursos.
 
-Make sure to deploy the output of `remix build`
+## Recursos Adicionais
 
-- `build/`
-- `public/build/`
+- [Documentação do Remix](https://docs.remix.run/)
+- [Repositório do Remix no GitHub](https://github.com/remix-run/remix)
+- [Comunidade Remix](https://remix.run/community)
 
-### Using a Template
+## Licença
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over relevant code/assets from your current app to the new project that's pre-configured for your target server.
-
-Most importantly, this means everything in the `app/` directory, but if you've further customized your current application outside of there it may also include:
-
-- Any assets you've added/updated in `public/`
-- Any updated versions of root files such as `.eslintrc.js`, etc.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
