@@ -22,7 +22,7 @@ export default function () {
                 <div>
                     <Suspense fallback={<Loading />}>
                         <h2 className="text-xl text-gray-300 m-2">Filmes</h2>
-                        <Await errorElement={<p>something went wrong</p>} resolve={filmsPromise}>
+                        <Await errorElement={<p className="text-xl text-gray-300">Ooops alguma coisa de errado aconteceu enquanto buscavamos os dados, por favor tente novamente</p>} resolve={filmsPromise}>
                             {(films) => {
                                 return (
                                     <div>
