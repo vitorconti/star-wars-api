@@ -20,7 +20,6 @@ class HttpClient {
     public async get<T>(url: string): Promise<T> {
         try {
             const response: AxiosResponse<T> = await this.instance.get(url, this.config);
-            console.log(response)
             return response.data;
         } catch (error: any | unknown) {
             this.handleError(error);
